@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Clément Sauzède — BTS SIO SISR</title>
+  <desc id="desc">Bannière de profil : nom, formation et spécialités sur fond bleu nuit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1628"/>
+      <stop offset="100%" stop-color="#193B63"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="200" rx="12" fill="url(#bg)"/>
+
+  <!-- Grille discrète -->
+  <g stroke="#315B7D" stroke-width="1" opacity="0.18">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="200" y1="0" x2="200" y2="200"/>
+    <line x1="400" y1="0" x2="400" y2="200"/>
+    <line x1="600" y1="0" x2="600" y2="200"/>
+  </g>
+
+  <!-- Nom -->
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#FFFFFF" letter-spacing="1">
+    Clément Sauzède
+  </text>
+
+  <!-- Sous-titre -->
+  <text x="400" y="116" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#DCE7F0">
+    BTS SIO SISR · Support · Systèmes · Réseaux
+  </text>
+
+  <!-- Ligne animée -->
+  <line x1="290" y1="140" x2="510" y2="140" stroke="#315B7D" stroke-width="2" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="12" dur="1.2s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Mention -->
+  <text x="400" y="168" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8FA9C2">
+    Clermont-Ferrand · Recherche stage 2e année
+    <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
+  </text>
+</svg>
