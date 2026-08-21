@@ -1,9 +1,7 @@
 <div align="center">
 
 <!-- Bannière avec effet de frappe — palette bleu nuit -->
-<a href="https://c-sauzede.netlify.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=3E7CB1&center=true&vCenter=true&multiline=true&width=750&height=110&lines=Cl%C3%A9ment+Sauz%C3%A8de;%C3%89tudiant+BTS+SIO+SISR+%C2%B7+Support,+Syst%C3%A8mes+%26+R%C3%A9seaux;Virtualisation+%C2%B7+Docker+%C2%B7+Supervision+%C2%B7+VPN;En+recherche+de+stage+2e+ann%C3%A9e+%C3%A0+Clermont-Ferrand" alt="Clément Sauzède — BTS SIO SISR" />
-</a>
+<img src="assets/header.svg" alt="Clément Sauzède — BTS SIO SISR" width="100%"/>
 
 <br/>
 
