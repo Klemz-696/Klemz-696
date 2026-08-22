@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">Clément Sauzède — BTS SIO SISR</title>
-  <desc id="desc">Bannière de profil : nom, formation et spécialités sur fond bleu nuit.</desc>
+  <title id="title">Profil GitHub — BTS SIO SISR</title>
+  <desc id="desc">Bannière de profil anonymisée : formation et spécialités sur fond bleu nuit.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0B1628"/>
@@ -20,14 +20,14 @@
     <line x1="600" y1="0" x2="600" y2="200"/>
   </g>
 
-  <!-- Nom -->
-  <text x="400" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#FFFFFF" letter-spacing="1">
-    Clément Sauzède
+  <!-- Titre principal : pas de nom -->
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#FFFFFF" letter-spacing="1">
+    BTS SIO · SISR
   </text>
 
   <!-- Sous-titre -->
   <text x="400" y="116" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#DCE7F0">
-    BTS SIO SISR · Support · Systèmes · Réseaux
+    Support · Systèmes · Réseaux · Virtualisation
   </text>
 
   <!-- Ligne animée -->
@@ -35,9 +35,9 @@
     <animate attributeName="stroke-dashoffset" from="0" to="12" dur="1.2s" repeatCount="indefinite"/>
   </line>
 
-  <!-- Mention -->
+  <!-- Mention basse : pas de ville -->
   <text x="400" y="168" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8FA9C2">
-    Clermont-Ferrand · Recherche stage 2e année
+    Homelab · Infrastructure · Automatisation
     <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
   </text>
 </svg>
