@@ -51,45 +51,6 @@ profil:
 
 ---
 
-## 🖥️ Homelab
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0B1628,100:193B63&height=180&section=header&text=homelab:~$+neofetch&fontSize=24&fontColor=FFFFFF&fontAlignY=35&animation=twinkling&desc=Virtualisation+%C2%B7+Conteneurs+%C2%B7+VPN+%C2%B7+Monitoring&descSize=14&descAlignY=65&descColor=8FA9C2" width="90%" alt="Homelab"/>
-
-</div>
-
-<details open>
-<summary><b>Vue d'ensemble</b></summary>
-
-<br/>
-
-```text
-┌─────────────────────────────────────────┐
-│         Infrastructure virtualisée      │
-│                                         │
-│  ┌─────────┐ ┌─────────┐ ┌──────────┐  │
-│  │ VM 01   │ │ VM 02   │ │ Services │  │
-│  │ Linux   │ │ Linux   │ │ Docker   │  │
-│  └────┬────┘ └────┬────┘ └────┬─────┘  │
-│       │           │           │         │
-│  ┌────┴───────────┴───────────┴─────┐  │
-│  │         Réseau interne           │  │
-│  │  Reverse proxy · Monitoring      │  │
-│  └────────────────┬─────────────────┘  │
-└───────────────────┼─────────────────────┘
-                    │
-┌───────────────────┼─────────────────────┐
-│   VPN chiffré     │   Accès distant     │
-│   sécurisé        │   multi-appareils   │
-└───────────────────┴─────────────────────┘
-```
-
-**Stack :** `Virtualisation` `Conteneurs` `Reverse proxy` `Monitoring` `VPN` `Automatisation`
-
-</details>
-
----
 
 ## 🛠️ Compétences
 
