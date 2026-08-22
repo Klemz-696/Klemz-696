@@ -1,14 +1,18 @@
 <div align="center">
 
-<!-- Bannière avec effet de frappe — palette bleu nuit -->
+<!-- Bannière animée : nom + spécialités en effet machine à écrire -->
 <img src="assets/header.svg" alt="Clément Sauzède — BTS SIO SISR" width="100%"/>
 
 <br/>
 
-<!-- Badges de statut -->
-[![Statut](https://img.shields.io/badge/Statut-Recherche_stage_2e_année-193B63?style=for-the-badge)](mailto:sauzede.clement@gmail.com)
-[![Localisation](https://img.shields.io/badge/Localisation-Clermont--Ferrand-315B7D?style=for-the-badge)](https://www.google.com/maps/search/?api=1&query=Clermont-Ferrand)
-[![Formation](https://img.shields.io/badge/BTS_SIO-Option_SISR-0B1628?style=for-the-badge)](https://c-sauzede.netlify.app/)
+<!-- Séparateur animé subtil -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=193B63&height=2&section=header" width="100%" alt=""/>
+
+<br/>
+
+[![Statut](https://img.shields.io/badge/Statut-Recherche_stage_2e_année-193B63?style=for-the-badge&logoColor=white)](mailto:sauzede.clement@gmail.com)
+[![Localisation](https://img.shields.io/badge/Localisation-Clermont--Ferrand-315B7D?style=for-the-badge&logoColor=white)](https://www.google.com/maps/search/?api=1&query=Clermont-Ferrand)
+[![Formation](https://img.shields.io/badge/BTS_SIO-SISR-0B1628?style=for-the-badge&logoColor=white)](https://c-sauzede.netlify.app/)
 
 </div>
 
@@ -16,58 +20,97 @@
 
 ## 🎯 À propos
 
+<table>
+<tr>
+<td width="55%" valign="top">
+
+Étudiant en **2e année de BTS SIO** (option **SISR**) au lycée Sidoine Apollinaire à Clermont-Ferrand.
+
+Je conçois et maintiens une infrastructure virtualisée sur mon homelab : cluster Proxmox à 2 nœuds, conteneurs Docker, VPN WireGuard et supervision.
+
+Je développe aussi des outils web autour de la donnée temps réel et de l'automatisation.
+
+</td>
+<td width="45%" valign="top">
+
 ```yaml
-identite:
+profil:
   nom: "Clément Sauzède"
-  statut: "Étudiant en 2e année de BTS SIO — option SISR"
-  etablissement: "Lycée Sidoine Apollinaire — Clermont-Ferrand"
-  objectif: "Stage de 2e année — Support, Systèmes & Réseaux"
-  passions: ["Homelab & virtualisation", "Télémétrie automobile", "Automatisation", "IA locale"]
+  formation: "BTS SIO SISR — 2e année"
+  lieu: "Clermont-Ferrand"
+  objectif: "Stage 2e année"
+  domaines:
+    - Support & Helpdesk
+    - Systèmes & Réseaux
+    - Virtualisation
+    - Supervision
+    - Automatisation
 ```
 
-> 💡 **En quelques mots :** je conçois et maintiens une infrastructure virtualisée sur mon homelab (cluster Proxmox, conteneurs Docker, VPN WireGuard, supervision), et je développe des outils web autour de la donnée en temps réel et de l'automatisation.
+</td>
+</tr>
+</table>
 
 ---
 
-<!-- Terminal simulé -->
+## 🖥️ Mon homelab
+
+<div align="center">
+
+<!-- Animation serveur / réseau : SVG inline léger -->
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0B1628,100:193B63&height=180&section=header&text=clement@homelab:~$+neofetch&fontSize=24&fontColor=FFFFFF&fontAlignY=35&animation=twinkling&desc=Cluster+Proxmox+VE+%C2%B7+Docker+%C2%B7+WireGuard+%C2%B7+Monitoring&descSize=14&descAlignY=65&descColor=8FA9C2" width="90%" alt="Homelab"/>
+
+</div>
+
 <details open>
-<summary>🖥️ <b>Terminal du homelab — <code>clement@homelab:~$ neofetch</code></b></summary>
+<summary><b>Architecture de l'infrastructure</b></summary>
+
+<br/>
 
 ```text
-       _,met$$$$$gg.          clement@homelab
-    ,g$$$$$$$$$$$$$$$P.       -------------------------------
-  ,g$$P"     """Y$$.".        Hôte        : Cluster Proxmox VE — 2 nœuds
- ,$$P'              `$$$.     Avant       : VMware ESXi + vCenter
-',$$P       ,ggs.     `$$b:   Conteneurs  : Docker (Heimdall, Nginx Proxy Manager,
-`d$$'     ,$P"'   .    $$$                  Uptime Kuma, AdGuard, Netdata, WoL)
- $$P      d$'     ,    $$P    Réseau      : WireGuard (accès distant PC + mobile)
- $$:      $$.   -    ,d$$'                · OPNsense (déploiement prévu)
- $$;      Y$b._   _,d$P'      Supervision : Netdata · Uptime Kuma
- Y$$.    `.`"Y$$$$P"'         Poste       : ThinkPad P14s · VMware Workstation
- `$$b      "-.__              Formation   : BTS SIO SISR — Sidoine Apollinaire
-  `Y$$                        Objectif    : Stage 2e année — Support / Sys / Réseaux
-   `$$b.
-     `Y$$b.
-        `"Y$b._
-            `"""
+                    ┌─────────────────────────────────────────┐
+                    │         Cluster Proxmox VE — 2 nœuds    │
+                    │                                         │
+                    │  ┌─────────┐ ┌─────────┐ ┌──────────┐  │
+                    │  │ VM 01   │ │ VM 02   │ │ CT Docker│  │
+                    │  │ Debian  │ │ Debian  │ │ Services │  │
+                    │  └────┬────┘ └────┬────┘ └────┬─────┘  │
+                    │       │           │           │         │
+                    │  ┌────┴───────────┴───────────┴─────┐  │
+                    │  │         Réseau interne           │  │
+                    │  │  Nginx Proxy Manager · AdGuard   │  │
+                    │  │  Uptime Kuma · Netdata · WoL     │  │
+                    │  └────────────────┬─────────────────┘  │
+                    └───────────────────┼─────────────────────┘
+                                        │
+                    ┌───────────────────┼─────────────────────┐
+                    │   VPN WireGuard   │   Accès distant     │
+                    │   PC + Mobile     │   chiffré           │
+                    └───────────────────┴─────────────────────┘
 ```
+
+**Stack déployée :** `Heimdall` `Nginx Proxy Manager` `Uptime Kuma` `AdGuard Home` `Netdata` `Wake-on-LAN` `Docker Compose`
+
+**Accès distant :** tunnel WireGuard depuis PC portable et smartphone — supervision et gestion à distance.
+
+**Avant Proxmox :** environnement VMware ESXi + vCenter (machines virtuelles connectées entre elles).
 
 </details>
 
 ---
 
-## 🛠️ Compétences techniques
+## 🛠️ Compétences
 
 <div align="center">
 
-### Systèmes, réseaux & infrastructure
+### Systèmes · Virtualisation · Réseaux
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=debian,linux,windows,powershell,bash,docker,nginx,git,githubactions" alt="Stack systèmes et réseaux" />
+  <img src="https://skillicons.dev/icons?i=debian,linux,windows,powershell,bash,docker,nginx,git,githubactions&theme=dark" alt="Stack infrastructure" />
 </a>
 
-### Supervision & développement
+### Supervision · Développement · Données
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=prometheus,grafana,py,nodejs,js,html,css,sqlite,postman" alt="Stack supervision et développement" />
+  <img src="https://skillicons.dev/icons?i=prometheus,grafana,py,nodejs,js,html,css,sqlite,postman&theme=dark" alt="Stack supervision et développement" />
 </a>
 
 </div>
@@ -76,12 +119,12 @@ identite:
 
 | Domaine | Outils & technologies |
 |:---|:---|
-| **🖥️ Systèmes** | `Windows`, `Linux (Debian)`, `Windows Server (bases)`, `Bash`, `PowerShell` |
-| **☁️ Virtualisation** | `Proxmox VE (cluster)`, `VMware ESXi`, `vCenter`, `VMware Workstation` |
-| **🛡️ Réseaux & sécurité** | `TCP/IP`, `DNS`, `WireGuard`, `Nginx`, `Packet Tracer` |
-| **🐳 Conteneurs** | `Docker`, `Docker Compose`, `Portainer` |
-| **📈 Supervision** | `Netdata`, `Uptime Kuma`, `Prometheus`, `Grafana` |
-| **⚡ Développement** | `Python`, `JavaScript`, `HTML/CSS`, `SQL`, `Node.js (bases)` |
+| **Systèmes** | `Windows` · `Linux (Debian)` · `Windows Server (bases)` · `Bash` · `PowerShell` |
+| **Virtualisation** | `Proxmox VE (cluster)` · `VMware ESXi` · `vCenter` · `VMware Workstation` |
+| **Réseaux** | `TCP/IP` · `DNS` · `WireGuard` · `Nginx` · `Packet Tracer` |
+| **Conteneurs** | `Docker` · `Docker Compose` · `Portainer` |
+| **Supervision** | `Netdata` · `Uptime Kuma` · `Prometheus` · `Grafana` |
+| **Développement** | `Python` · `JavaScript` · `HTML/CSS` · `SQL` · `Node.js (bases)` |
 
 ---
 
@@ -89,74 +132,14 @@ identite:
 
 <div align="center">
 
-### 🏎️ Télémétrie de course en direct
-*Récupération, traitement et affichage en direct de données de session automobile sur une interface web personnelle.*
-
-`Python` `Node.js` `HTML/CSS/JS` `Temps réel`
-
----
-
-### 🌐 [Portfolio personnel](https://c-sauzede.netlify.app/)
-*Site vitrine responsive présentant mon parcours, mes compétences et mes projets techniques.*
-
-`HTML5` `CSS3` `JavaScript` `Netlify`
-
----
-
-### 🏠 Homelab — infrastructure & sécurité *(documentation publique en préparation)*
-*Cluster Proxmox à 2 nœuds : VM et conteneurs Docker, VPN WireGuard, supervision et services auto-hébergés.*
-
-`Proxmox VE` `Docker` `WireGuard` `Monitoring`
-
----
-
-### 🤖 OpenJarvis — assistant IA local *(prototype — dépôt privé)*
-*Assistant vocal local : LLM servi en local, transcription faster-whisper, synthèse vocale et actions système contrôlées.*
-
-`Python` `LLM local` `Voice AI` `PowerShell`
+| | Projet | Description | Stack |
+|:---:|:---|:---|:---|
+| 🏎️ | **Télémétrie de course en direct** | Récupération, traitement et affichage temps réel de données de session automobile | `Python` `Node.js` `HTML/CSS/JS` `Temps réel` |
+| 🌐 | **[Portfolio personnel](https://c-sauzede.netlify.app/)** | Site vitrine responsive : parcours, compétences et projets | `HTML5` `CSS3` `JavaScript` `Netlify` |
+| 🏠 | **Homelab — infra & sécurité** *(doc publique en préparation)* | Cluster Proxmox 2 nœuds, Docker, VPN WireGuard, supervision | `Proxmox` `Docker` `WireGuard` `Monitoring` |
+| 🤖 | **OpenJarvis — assistant IA local** *(prototype — privé)* | LLM local, reconnaissance vocale, synthèse vocale, actions système contrôlées | `Python` `LLM local` `Voice AI` `PowerShell` |
 
 </div>
-
----
-
-## 🕹️ Mini-jeu : l'incident sysadmin
-
-> **📟 Alerte :** `CRITICAL — node01 : CPU 100 % · latence > 850 ms · Nginx 502 Bad Gateway`
->
-> Que faites-vous ?
-
-<details>
-<summary>👉 <b>Option A :</b> rebooter sauvagement le serveur (appui long sur l'alimentation)</summary>
-
-> ❌ **Mauvais choix.** Redémarrage brutal, aucune donnée de diagnostic collectée, risque de corruption des VM et des conteneurs. L'incident se reproduira sans que vous sachiez pourquoi.
-
-</details>
-
-<details>
-<summary>👉 <b>Option B :</b> ouvrir une session SSH de secours et lancer <code>htop</code> + <code>journalctl -xe</code></summary>
-
-```bash
-# Analyse
-clement@homelab:~$ htop
-# Constat : un conteneur Docker de test boucle des requêtes en continu
-
-# Remédiation
-clement@homelab:~$ docker stop container_rogue
-clement@homelab:~$ systemctl restart nginx
-clement@homelab:~$ curl -I https://homelab.local
-HTTP/2 200 OK   # 🎉 Service rétabli
-```
-
-> 🏆 **Bonne analyse.** Diagnostic avant action, remédiation ciblée, production rétablie sans perte.
-
-</details>
-
-<details>
-<summary>👉 <b>Option C :</b> « c'est un problème DNS » et aller prendre un café ☕</summary>
-
-> ☕ **Statistiquement, c'est souvent DNS… mais pas cette fois.** Sans vérification, c'est une hypothèse, pas un diagnostic. (Et le café ne répare pas Nginx.)
-
-</details>
 
 ---
 
@@ -164,21 +147,25 @@ HTTP/2 200 OK   # 🎉 Service rétabli
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Klemz-696&show_icons=true&hide_border=true&count_private=true&title_color=315B7D&icon_color=315B7D&text_color=526577&bg_color=00000000" height="165" alt="Statistiques GitHub" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Klemz-696&layout=compact&hide_border=true&title_color=315B7D&text_color=526577&bg_color=00000000" height="165" alt="Langages les plus utilisés" />
+<img src="https://github-readme-stats.vercel.app/api?username=Klemz-696&show_icons=true&hide_border=true&count_private=true&title_color=4A90D9&icon_color=4A90D9&text_color=A8C5E0&bg_color=0B1628" height="165" alt="Statistiques GitHub" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Klemz-696&layout=compact&hide_border=true&title_color=4A90D9&text_color=A8C5E0&bg_color=0B1628" height="165" alt="Langages les plus utilisés" />
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=Klemz-696&hide_border=true&stroke=315B7D&ring=315B7D&fire=2563A3&currStreakLabel=315B7D&background=00000000" alt="Série de contributions" />
+<img src="https://streak-stats.demolab.com/?user=Klemz-696&hide_border=true&stroke=4A90D9&ring=4A90D9&fire=2563A3&currStreakLabel=A8C5E0&sideLabels=A8C5E0&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=526577&background=0B1628" alt="Série de contributions" />
 
-<br/><br/>
+</div>
 
-### 🐍 Contributions
+---
+
+## 🐍 Contributions
+
+<div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Klemz-696/Klemz-696/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Klemz-696/Klemz-696/output/github-contribution-grid-snake.svg">
-  <img alt="Animation des contributions" src="https://raw.githubusercontent.com/Klemz-696/Klemz-696/output/github-contribution-grid-snake.svg">
+  <img alt="Animation des contributions" src="https://raw.githubusercontent.com/Klemz-696/Klemz-696/output/github-contribution-grid-snake.svg" width="100%">
 </picture>
 
 </div>
@@ -189,24 +176,27 @@ HTTP/2 200 OK   # 🎉 Service rétabli
 
 <div align="center">
 
+<!-- Séparateur animé -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=193B63&height=2&section=header" width="60%" alt=""/>
+
+<br/><br/>
+
 <a href="https://c-sauzede.netlify.app/">
-  <img src="https://img.shields.io/badge/Portfolio-0B1628?style=for-the-badge&logo=netlify&logoColor=white" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-0B1628?style=for-the-badge&logo=netlify&logoColor=4A90D9" alt="Portfolio" />
 </a>
-&nbsp;
+&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/clement-sauzede/">
   <img src="https://img.shields.io/badge/LinkedIn-193B63?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
-&nbsp;
+&nbsp;&nbsp;
 <a href="mailto:sauzede.clement@gmail.com">
   <img src="https://img.shields.io/badge/Email-315B7D?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
 
 <br/><br/>
 
-```text
-"Automatiser ce qui peut l'être, superviser tout le reste."
-```
+> *"Automatiser ce qui peut l'être, superviser tout le reste."*
 
-<sub>⚡ Profil maintenu par <b>Clément Sauzède</b> — BTS SIO SISR, Clermont-Ferrand</sub>
+<sub>⚡ Profil maintenu par **Clément Sauzède** — BTS SIO SISR · Clermont-Ferrand</sub>
 
 </div>
