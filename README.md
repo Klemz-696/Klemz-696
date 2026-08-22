@@ -1,11 +1,12 @@
 <div align="center">
 
-<!-- Bannière animée : nom + spécialités en effet machine à écrire -->
-<img src="assets/header.svg" alt="Clément Sauzède — BTS SIO SISR" width="100%"/>
+<!-- Bannière animée -->
+<a href="https://c-sauzede.netlify.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=900&color=4A90D9&center=true&vCenter=true&multiline=true&width=800&height=120&lines=Cl%C3%A9ment+Sauz%C3%A8de;%C3%89tudiant+BTS+SIO+SISR+%C2%B7+Support+%C2%B7+Syst%C3%A8mes+%C2%B7+R%C3%A9seaux;Virtualisation+%C2%B7+Docker+%C2%B7+Supervision+%C2%B7+VPN;En+recherche+de+stage+2e+ann%C3%A9e+%C3%A0+Clermont-Ferrand" alt="Clément Sauzède — BTS SIO SISR" />
+</a>
 
 <br/>
 
-<!-- Séparateur animé subtil -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=193B63&height=2&section=header" width="100%" alt=""/>
 
 <br/>
@@ -57,7 +58,6 @@ profil:
 
 <div align="center">
 
-<!-- Animation serveur / réseau : SVG inline léger -->
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0B1628,100:193B63&height=180&section=header&text=clement@homelab:~$+neofetch&fontSize=24&fontColor=FFFFFF&fontAlignY=35&animation=twinkling&desc=Cluster+Proxmox+VE+%C2%B7+Docker+%C2%B7+WireGuard+%C2%B7+Monitoring&descSize=14&descAlignY=65&descColor=8FA9C2" width="90%" alt="Homelab"/>
 
 </div>
@@ -93,7 +93,7 @@ profil:
 
 **Accès distant :** tunnel WireGuard depuis PC portable et smartphone — supervision et gestion à distance.
 
-**Avant Proxmox :** environnement VMware ESXi + vCenter (machines virtuelles connectées entre elles).
+**Avant Proxmox :** environnement VMware ESXi + vCenter.
 
 </details>
 
@@ -143,16 +143,20 @@ profil:
 
 ---
 
-## 📊 Activité GitHub
+## 📊 Activité
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Klemz-696&show_icons=true&hide_border=true&count_private=true&title_color=4A90D9&icon_color=4A90D9&text_color=A8C5E0&bg_color=0B1628" height="165" alt="Statistiques GitHub" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Klemz-696&layout=compact&hide_border=true&title_color=4A90D9&text_color=A8C5E0&bg_color=0B1628" height="165" alt="Langages les plus utilisés" />
+<!-- Badges shields.io — 100% fiables, pas de service externe instable -->
+
+![Public Repos](https://img.shields.io/badge/Dépôts_publics-2-193B63?style=for-the-badge&logo=github&logoColor=white)
+![Followers](https://img.shields.io/github/followers/Klemz-696?style=for-the-badge&logo=github&logoColor=white&label=Followers&color=315B7D)
+![Following](https://img.shields.io/github/following/Klemz-696?style=for-the-badge&logo=github&logoColor=white&label=Following&color=0B1628)
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=Klemz-696&hide_border=true&stroke=4A90D9&ring=4A90D9&fire=2563A3&currStreakLabel=A8C5E0&sideLabels=A8C5E0&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=526577&background=0B1628" alt="Série de contributions" />
+![Last Commit](https://img.shields.io/github/last-commit/Klemz-696/Klemz-696?style=for-the-badge&logo=git&logoColor=white&label=Dernier%20commit&color=2563A3)
+![Created](https://img.shields.io/badge/Créé_en-2024-193B63?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
@@ -176,7 +180,6 @@ profil:
 
 <div align="center">
 
-<!-- Séparateur animé -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=193B63&height=2&section=header" width="60%" alt=""/>
 
 <br/><br/>
