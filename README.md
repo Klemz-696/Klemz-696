@@ -80,14 +80,13 @@ profil:
 
 ---
 
-## 🚀 Projets
+## 🚀 Projets perso
 
 <div align="center">
 
 | | Projet | Description | Stack |
 |:---:|:---|:---|:---|
 | 🏎️ | **Télémétrie temps réel** | Collecte et affichage de données de session en direct | `Python` `Node.js` `HTML/CSS/JS` |
-| 🌐 | **Portfolio web** | Site vitrine responsive | `HTML5` `CSS3` `JavaScript` |
 | 🏠 | **Homelab** | Infrastructure virtualisée et services auto-hébergés | `Virtualisation` `Docker` `VPN` |
 | 🤖 | **Assistant IA local** | Prototype d'assistant vocal et automatisation | `Python` `LLM` `Voice AI` |
 
@@ -121,25 +120,7 @@ profil:
 
 ---
 
-## 🤝 Contact
-
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=193B63&height=2&section=header" width="60%" alt=""/>
-
-<br/><br/>
-
-<a href="https://c-sauzede.netlify.app/">
-  <img src="https://img.shields.io/badge/Portfolio-0B1628?style=for-the-badge&logo=netlify&logoColor=4A90D9" alt="Portfolio" />
-</a>
-&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/clement-sauzede/">
-  <img src="https://img.shields.io/badge/LinkedIn-193B63?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-
-<br/><br/>
-
-> *"Automatiser ce qui peut l'être, superviser tout le reste."*
 
 <sub>⚡ Profil GitHub — BTS SIO SISR</sub>
 
